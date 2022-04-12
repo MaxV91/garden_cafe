@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   height: 60px;
-  width: 100%;
+  width: 928px;
   background: lightcoral;
   display: flex;
   justify-content: center;
