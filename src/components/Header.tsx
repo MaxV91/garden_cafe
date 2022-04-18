@@ -4,7 +4,7 @@ import {NavLink, Link} from 'react-router-dom';
 
 const Wrapper = styled.div`
   height: 60px;
-  background: lightcoral;
+  //background: lightgreen;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -13,6 +13,8 @@ const Wrapper = styled.div`
   & > a {
     width: 150px;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
   }
 `;
 
@@ -21,7 +23,7 @@ const Header: React.FC = () => {
     <Wrapper>
       <Link to="/">Главная</Link>
       <Link to="/price">Прайс</Link>
-      <Link to="/">Контакты</Link>
+      <Link to="/contacts">Контакты</Link>
     </Wrapper>
   );
 };

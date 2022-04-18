@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+// @ts-ignore
+import pureshka from './../assets/img/pureshka.png';
 
 const Wrapper = styled.div`
   width: 240px;
@@ -14,15 +16,24 @@ const Wrapper = styled.div`
     border-radius: 10px;
     background-color: red;
   }
+  
+  .bottom_section {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const CardItem: React.FC = () => {
   return (
     <Wrapper>
-      <div className="img">изобр</div>
-      <div className="title">название</div>
-      <div className="desc">описание</div>
-      <div className="cost">цена</div>
+      <img src={pureshka} alt="pureshka" className="img" />
+      <div className="bottom_section">
+        <div className="title">название</div>
+        <div className="desc">описание</div>
+        <div className="cost">цена</div>
+      </div>
     </Wrapper>
   )
 };
