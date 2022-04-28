@@ -3,6 +3,7 @@ import MainPage from '../../pages/MainPage';
 import PricePage from '../../pages/PricePage';
 import ContactsPage from '../../pages/ContactsPage';
 import Header from '../Header';
+import Footer from '../Footer';
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/price" element={<PricePage />} />
         <Route path="/contacts" element={<ContactsPage />} />
       </Routes>
+      <Footer />
     </Router>
   )
 };
