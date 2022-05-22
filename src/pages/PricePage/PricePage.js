@@ -1,5 +1,5 @@
+import PriceGrid from '../../components/PriceGrid';
 
-
-const PricePage = () => (<div>pricepage</div>)
+const PricePage = () => (<PriceGrid />)
 
 export default PricePage;
